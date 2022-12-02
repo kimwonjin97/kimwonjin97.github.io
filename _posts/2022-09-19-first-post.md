@@ -9,6 +9,7 @@ tags:
 
 toc: true
 toc_sticky: true
+breadcrumb: true
 
 date: 2022-09-19
 last_modified_at: 2022-09-19
@@ -31,3 +32,5 @@ last_modified_at: 2022-09-19
 ## 셈플
 # 셈플
 ### 셈플
+
+{{page.date}}
