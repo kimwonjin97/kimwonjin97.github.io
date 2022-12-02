@@ -13,6 +13,7 @@ breadcrumb: true
 
 date: 2022-09-19
 last_modified_at: 2022-09-19
+mathjax: true
 ---
 
 # 테스트 포스팅
@@ -34,3 +35,5 @@ last_modified_at: 2022-09-19
 ### 셈플
 
 {{page.date}}
+
+\\(\vec{f_{ij,spring}} = -k(\vert\vec{x_i} - \vec{x_j}\vert - l_0){\vec{x_i} - \vec{x_j}\over{\vert\vec{x_i} - \vec{x_j}\vert}} \\)
