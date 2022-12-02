@@ -69,8 +69,10 @@ body {
 }
 
 .page__title {
+  font-family: $Humanbumsuk;
   margin-top: 0;
   line-height: 1;
+  color: mix(#fff, $primary-color, 40%);
 
   a {
     color: $text-color;
@@ -88,6 +90,7 @@ body {
 }
 
 .page__content {
+  margin-top: 15px;
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
@@ -329,8 +332,9 @@ body {
    ========================================================================== */
 
 .page__taxonomy {
+  margin-top: -20px;
   .sep {
-    display: none;
+    display: inline;
   }
 
   strong {
@@ -354,13 +358,13 @@ body {
 }
 .page__taxonomy-item-tag {
   display: inside;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  padding: 3px 8px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  padding: 2px 5px;
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: #4D5357;
+  background-color: #225d84;
   font-family: $serif;
   color: $primary-color;
 
@@ -371,15 +375,16 @@ body {
 }
 .page__taxonomy-item-category {
   display: inside;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  padding: 3px 8px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  padding: 2px 5px;
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: mix(#fff, #4D5357, 18%);
+  background-color: mix(#fff, #87205e, 15%);
   font-family: $serif;
-  color: mix(#fff, $primary-color, 2%);;
+  color: mix(#fff, $primary-color, 2%);
+  // color: $primary-color;
 
   &:hover {
     text-decoration: none;

@@ -3,7 +3,7 @@ title:  "Don't use constexpr"
 excerpt: "Use static constexpr instead of just constexpr"
 
 categories:
-  - cpp
+  - Cpp
 tags:
   - [C++]
 

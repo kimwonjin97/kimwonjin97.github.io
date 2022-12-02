@@ -4,8 +4,9 @@ excerpt: "Summary of Cpp best practices"
 
 categories:
   - Programming
+  - Cpp
 tags:
-  - [OOP, C++]
+  - [OOP, Cpp]
 
 toc: true
 toc_sticky: true

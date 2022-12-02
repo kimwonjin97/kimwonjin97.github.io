@@ -105,6 +105,13 @@
   }
 }
 
+.sidebar__top {
+  position: fixed;
+  bottom: 1.5em;
+  right: 2em;
+  z-index: 10;
+}
+
 .splash .sidebar__right {
   @include breakpoint($large) {
     position: relative;
@@ -134,12 +141,12 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 230px;
+    border-radius: 10%;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 0.5px solid $border-color;
     }
   }
 }
