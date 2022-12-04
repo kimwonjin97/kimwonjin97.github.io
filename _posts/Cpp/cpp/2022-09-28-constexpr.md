@@ -105,3 +105,4 @@ this forces initialization at compile-time, through the means of "constant initi
 3. you rarely want constexpr variables
 4. you almost always mean static constexpr instead
 
+[Move to Top](#){: .btn .btn--primary }{: .align-right}
