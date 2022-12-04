@@ -58,5 +58,31 @@ classes: wide
 
     {% include scripts.html %}
 
+        
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+    <script>
+        L2Dwidget.init({
+            "model": {
+                jsonPath: "https://unpkg.com/live2d-widget-model-tororo/assets/tororo.model.json",
+                "scale": 0.5
+            },
+            "display": {
+                "position": "right",
+                "width": 50,
+                "height": 100,
+                "hOffset": 0,
+                "vOffset": -20
+            },
+            "mobile": {
+                "show": true,
+                "scale": 0.5
+            },
+            "react": {
+                "opacityDefault": 1,
+                "opacityOnHover": 0.6
+            }
+        });
+    </script>
+
   </body>
 </html>
