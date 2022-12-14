@@ -34,7 +34,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">Implementation of Algorithm (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/algorithm" class="">Leetcode({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "baekjoon" %}
+                        <li><a href="/categories/baekjoon" class="">baekjoon({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -60,6 +67,17 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+        <span class="nav__sub-title">AI</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DSS" %}
+                        <li><a href="/categories/dss" class="">Decision Support System(DSS) ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        
       </li>
   </ul>
 </nav>
