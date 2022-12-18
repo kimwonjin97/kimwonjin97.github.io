@@ -25,6 +25,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "cpp-tips" %}
+                        <li><a href="/categories/cpp-tips" class="">C++ Tips ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "STL" %}
                         <li><a href="/categories/stl" class="">C++ STL & 표준 ({{category[1].size}})</a></li>
                     {% endif %}
