@@ -79,7 +79,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "DSS" %}
-                        <li><a href="/categories/dss" class="">Decision Support System(DSS) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/DSS" class="">Decision Support System(DSS) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
