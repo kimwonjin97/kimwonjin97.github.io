@@ -67,6 +67,15 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "graphics" %}
+                        <li><a href="/categories/graphics" class="">Computer Graphics ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
             <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "others" %}
