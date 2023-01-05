@@ -17,9 +17,9 @@ last_modified_at: 2022-09-21
 # Example of topological sort
 
 어떤 연속적이지만 특정한 순서가 있는 테스크들에 우리는 topological sort를 적용할 수 있습니다. 예를들면 옷을 입고 학교를 가는것을 예제로들자면
-![1](images/2022-09-22-07-53-50.png)
+![1](/assets/images/posts/Algorithm/algorithms/2022-09-22-07-53-50.png)
 셔츠, 속옷, 양말중 어떤것을 먼저 입느냐는 중요하지 않지만 바지를 입기전에 속옷을 입는다던지 아님 양말을 신기전 신발을 신는 행동들은 이상한 결과를 가져올것 입니다. 따라서 결과적으로 유일하진(unique) 않지만 특정한 순서가 존재하는것은 분명하고 위예제에서 가능한 topological ordering은 다음과 같을 것입니다.
-![1](images/2022-09-22-07-59-24.png)
+![1](/assets/images/posts/Algorithm/algorithms/2022-09-22-07-59-24.png)
 
 다수의 많은 상황들이 위예제와 같이 방향그래프(directed graph)를 사용하여 표현될 수 있습니다. 예를들면, program build dependencies, college class prerequisites, event scheduling, assembly instruction 등이 위상정렬을 통해 표현될 수 있을것 입니다.
 
@@ -37,7 +37,7 @@ last_modified_at: 2022-09-21
 전반적인 알고리즘은 우선 반복적으로 다른하나에 종속되지 않은 노드들을 그래프에서 제거한후 결과값에 추가해주는 것입니다. 
 
 예제를 하나 보겠습니다.
-![1](images/2022-09-22-08-12-34.png)
+![1](/assets/images/posts/Algorithm/algorithms/2022-09-22-08-12-34.png)
 
 독립적인 노드란, 노드에 들어오는 in-order가 0이란 말과 비슷합니다. 그래프에 이와 같은 노드들을 찾은후에 전부 큐에 넣어줍니다. 이렇게 하면 가장먼저 노드 2가 큐에 들어올 것입니다. 이를 그래프에서 제거한후 기존에 종속되었던 노드0과 노드4에 대해서도 결과를 반영해줍니다. 그리고 만약 노드 0과 4가 이로인해 독립적인 노드가 되었다면 이를 다시 큐에 넣어주는 형식으로 반복합니다. 이를 수행했을경후 하나의 가능한 위상정렬은 [2, 0, 4, 3, 5, 1] 입니다.
 
