@@ -60,6 +60,16 @@
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">Programming</span>
+
+        
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Object Oriented Design" %}
+                        <li><a href="/categories/OODesign" class="">System ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "system" %}
